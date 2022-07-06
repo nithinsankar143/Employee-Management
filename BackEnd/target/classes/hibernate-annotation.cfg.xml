@@ -1,0 +1,31 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<hibernate-configuration>
+   <session-factory>
+   
+      <property name = "hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+      
+      <property name = "hibernate.connection.driver_class">org.postgresql.Driver</property>
+      
+      <property name = "hibernate.connection.url">jdbc:postgresql://localhost:5432/employee</property>
+      
+      <property name = "hibernate.connection.username">postgres</property>
+      
+      <property name = "hibernate.connection.password">postgres</property>
+      
+      <property name="hibernate.connection.pool_size">1</property>
+      
+      <property name="hibernate.current_session_context_class">thread</property>
+      
+      <property name="hibernate.show_sql">true</property>
+      
+          <mapping class="com.project.model.Employee"/>
+      	  <mapping class="com.project.model.City"/>	 
+      	 <mapping class="com.project.model.Department"/>	 
+      	    <mapping class="com.project.model.Designation"/>	 
+      	  <mapping class="com.project.model.Salary"/>	
+      	  <mapping class="com.project.model.Project"/>	
+      	   
+      
+	  
+   </session-factory>
+</hibernate-configuration>
