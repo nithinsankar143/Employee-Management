@@ -20,7 +20,7 @@ public static void main(String[] args) {
 	session.beginTransaction();
 	   Date date=new Date(System.currentTimeMillis());
 
-	Employee emp=new Employee(1,"nithin","sankar","male",23,"single","abc@gmail.com",9274238890L,date);
+//	Employee emp=new Employee(1,"nithin","sankar","male",23,"single","abc@gmail.com",9274238890L,date);
 	
 	//city
 	City city=new City();
@@ -29,27 +29,31 @@ public static void main(String[] args) {
 	city.setState("Tamilnadu");
 	city.setPincode(638111);
 	
-	city.setCity_id(2);
-	city.setName("Coimbatore");
-	city.setState("Tamilnadu");
-	city.setPincode(641005);
+	City city1=new City();
+	city1.setCity_id(2);
+	city1.setName("Coimbatore");
+	city1.setState("Tamilnadu");
+	city1.setPincode(641005);
 	
-	city.setCity_id(3);
-	city.setName("Bangalore Urban");
-	city.setState("Karnataka");
-	city.setPincode(560001);
+	City city2=new City();
+	city2.setCity_id(3);
+	city2.setName("Bangalore Urban");
+	city2.setState("Karnataka");
+	city2.setPincode(560001);
 	
-	city.setCity_id(4);
-	city.setName("Palakkad");
-	city.setState("Kerala");
-	city.setPincode(678001);
+	City city3=new City();
+	city3.setCity_id(4);
+	city3.setName("Palakkad");
+	city3.setState("Kerala");
+	city3.setPincode(678001);
 	
-	city.setCity_id(5);
-	city.setName("Chennai");
-	city.setState("Tamilnadu");
-	city.setPincode(600005);
+	City city4=new City();
+	city4.setCity_id(5);
+	city4.setName("Chennai");
+	city4.setState("Tamilnadu");
+	city4.setPincode(600005);
 	
-	emp.setCity(city);
+//	emp.setCity(city);
 	
 	
 	//Department
